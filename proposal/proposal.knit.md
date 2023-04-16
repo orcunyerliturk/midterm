@@ -1,0 +1,75 @@
+---
+title: "UFO Sightings"
+author: 
+  - Yerliturk, Turker Orcun[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{english}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+
+
+<!-- ======================================================================= -->
+<!-- ============================== FOOTNOTES ============================== -->
+<!-- ======================================================================= -->
+[^1]: 20080506, [Github Repo](https://github.com/orcunyerliturk/midterm)
+
+# Important Information About Midterm
+
+\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 35 IN THIS FILE!}
+
+**Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.**
+
+**You must upload your project folder (`YourStudentID.zip` file) to *ekampus.ankara.edu.tr* until 16 April 2023, 23:59.**
+
+\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
+
+# Introduction
+First of all, the purpose of my study is to examine the dataset related to UFO sightings. I found the necessary data for this study on the "https://github.com/rfordatascience/tidytuesday" website. After finding the dataset, I removed the rows containing "NA" values using the command "ufo_sightings <- na.omit(ufo_sightings)". The remaining variables are as follows: date time, city area, state, country, UFO shapes, encounter length, described encounter length, description, data documented, latitude, longitude. My dataset has a total of 66,516 entries.
+
+The question I am asking is: "Do UFOs really exist or are they just an illusion that people see?" This question is related to the articles and books I found, and I have created a literature review with the information from these sources.
+
+## Literature Review
+
+In recent years, there has been increasing interest in the subject of Unidentified Flying Objects (UFOs) and their potential existence. This interest has led to a significant amount of research and debate among scientists, researchers, and enthusiasts. In this literature review, four sources of information will be examined.
+
+"All research revolves around this question: “Do UFOs really exist or are they just an illusion that people see?” Many people from different parts of the world claim to have observed UFOs and demand that research be conducted on UFOs. However, as stated in the quote from @ {Sturrock:1997 "Physical scientists cannot get involved in the UFO problem unless there is physical evidence." Nevertheless, there have been individuals who presented physical evidence. As mentioned in @ {Clarke:2009 book, most sightings can be explained, but there are still unexplained cases, which is why more needs to be learned about UFOs. According to @{Greer:2009 book, the UFO phenomenon is a complex mixture of facts, fantasies, and misleading information, and a more nuanced approach is necessary to fully understand it. Just like people who observe UFOs, scientists investigating these phenomena cannot come to a definitive conclusion. @{Alexander:2011 concludes that most conspiracy theories and myths about UFOs are not supported by evidence."
+
+In conclusion, the literature on UFOs is vast and varied, with a range of opinions and theories on the subject. While some argue that there is significant evidence to support the existence of UFOs, others maintain that there is little empirical evidence to prove their existence. However, most agree that the UFO phenomenon remains a fascinating and mysterious topic that requires further research and investigation.
+
+
+
+
+**References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.**
+
+**_You shouldn't delete the last 3 lines. Those lines are required for References section._**
+
+\newpage
+# References {#references}
+<div id="refs"></div>
+
+https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=869a38b4b12d857ad6330f1f5f2dfd8634b69aee
+
+https://books.google.com.tr/books?id=51nCAwAAQBAJ&printsec=frontcover&hl=tr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
+
+https://books.google.com.tr/books?hl=tr&lr=&id=EYU1GrJjUZMC&oi=fnd&pg=PR7&dq=The+UFO+Phenomenon:+Fact,+Fantasy+and+Disinformation&ots=Du8VevjneM&sig=bHTd33yj-HQyq0zuP9hf0d5EMI8&redir_esc=y#v=onepage&q=The%20UFO%20Phenomenon%3A%20Fact%2C%20Fantasy%20and%20Disinformation&f=false
+
+https://books.google.com.tr/books?hl=tr&lr=&id=IaA8mZqhjPkC&oi=fnd&pg=PR13&dq=related:YNdJdYeCiV4J:scholar.google.com/&ots=rpDwRs7EOZ&sig=Qbvd_knIemNchpwpZu1ehdIKEM0&redir_esc=y#v=onepage&q&f=false
