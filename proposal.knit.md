@@ -3,7 +3,7 @@ title: "UFO Sightings"
 author: 
   - Yerliturk, Turker Orcun[^1]
 bibliography: ../bibliography/biblio.bib
-csl:../csl/apa.csl
+csl: ../csl/apa.csl
 header-includes:
   - \usepackage{polyglossia}
   - \setmainlanguage{english}
@@ -25,9 +25,7 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
-```
+
 
 <!-- ======================================================================= -->
 <!-- ============================== FOOTNOTES ============================== -->
