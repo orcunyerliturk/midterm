@@ -9,8 +9,8 @@ editor_options:
 title: "UFO Sightings"
 author: 
    - Yerliturk, Turker Orcun[^1]
- bibliography: ../bibliography/biblio.bib
- csl :../csl/apa.csl
+bibliography: ../bibliography/biblio.bib
+csl :../csl/apa.csl
 header-includes:
   - \usepackage{polyglossia}
   - \setmainlanguage{english}
