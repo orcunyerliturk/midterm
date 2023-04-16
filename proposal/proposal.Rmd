@@ -1,7 +1,7 @@
 ---
-title: "Title"
+title: "UFO Sightings"
 author: 
-  - Last Name, First Name[^1]
+  - Yerliturk, Turker Orcun[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa.csl
 header-includes:
@@ -32,7 +32,7 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== FOOTNOTES ============================== -->
 <!-- ======================================================================= -->
-[^1]: Student ID, [Github Repo](https://github.com/YOUR_USER_NAME_HERE/YOUR_REPO_NAME_HERE)
+[^1]: 20080506, [Github Repo](https://github.com/orcunyerliturk/midterm)
 
 # Important Information About Midterm
 
@@ -45,15 +45,18 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 \colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
 
 # Introduction
-This outline has been created to assist you in writing your project assignment. You should cite all the sources you use, articles, presentations, projects, etc. Quoting and referencing gives readers the opportunity to access the resources you refer. **Even though you use your own words, if you are conveying the ideas of others in your work, you have to document the source of these ideas. Otherwise, you are committing academic plagiarism.** For example, you can refer to @aydinonat:2007 for academic writing rules. You can find lots of online resources on this topic.
+First of all, the purpose of my study is to examine the dataset related to UFO sightings. I found the necessary data for this study on the "https://github.com/rfordatascience/tidytuesday" website. After finding the dataset, I removed the rows containing "NA" values using the command "ufo_sightings <- na.omit(ufo_sightings)". The remaining variables are as follows: date time, city area, state, country, UFO shapes, encounter length, described encounter length, description, data documented, latitude, longitude. My dataset has a total of 66,516 entries.
 
-The sections in your project assignment must necessarily include the sections in this text (except the first section, of course). Apart from the sections used here, you can use different subsections. When writing your project, use this file as a draft and adapt its content to your purposes.
-
-In this section, mention the purpose and importance of your work in a few paragraphs.
+The question I am asking is: "Do UFOs really exist or are they just an illusion that people see?" This question is related to the articles and books I found, and I have created a literature review with the information from these sources.
 
 ## Literature Review
 
-In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation @chang:2013. This one is a parenthetical citation [@chang:2013]. **Do not summarize each article individually under a separate title.** In the literature review section, **at least four** articles must be cited [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
+In recent years, there has been increasing interest in the subject of Unidentified Flying Objects (UFOs) and their potential existence. This interest has led to a significant amount of research and debate among scientists, researchers, and enthusiasts. In this literature review, four sources of information will be examined.
+
+"All research revolves around this question: “Do UFOs really exist or are they just an illusion that people see?” Many people from different parts of the world claim to have observed UFOs and demand that research be conducted on UFOs. However, as stated in the quote from @ {Sturrock:1997 "Physical scientists cannot get involved in the UFO problem unless there is physical evidence." Nevertheless, there have been individuals who presented physical evidence. As mentioned in @ {Clarke:2009 book, most sightings can be explained, but there are still unexplained cases, which is why more needs to be learned about UFOs. According to @{Greer:2009 book, the UFO phenomenon is a complex mixture of facts, fantasies, and misleading information, and a more nuanced approach is necessary to fully understand it. Just like people who observe UFOs, scientists investigating these phenomena cannot come to a definitive conclusion. @{Alexander:2011 concludes that most conspiracy theories and myths about UFOs are not supported by evidence."
+
+In conclusion, the literature on UFOs is vast and varied, with a range of opinions and theories on the subject. While some argue that there is significant evidence to support the existence of UFOs, others maintain that there is little empirical evidence to prove their existence. However, most agree that the UFO phenomenon remains a fascinating and mysterious topic that requires further research and investigation.
+
 
 
 
@@ -65,3 +68,10 @@ In this section, discuss the articles you have read on the subject by giving ref
 # References {#references}
 <div id="refs"></div>
 
+https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=869a38b4b12d857ad6330f1f5f2dfd8634b69aee
+
+https://books.google.com.tr/books?id=51nCAwAAQBAJ&printsec=frontcover&hl=tr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
+
+https://books.google.com.tr/books?hl=tr&lr=&id=EYU1GrJjUZMC&oi=fnd&pg=PR7&dq=The+UFO+Phenomenon:+Fact,+Fantasy+and+Disinformation&ots=Du8VevjneM&sig=bHTd33yj-HQyq0zuP9hf0d5EMI8&redir_esc=y#v=onepage&q=The%20UFO%20Phenomenon%3A%20Fact%2C%20Fantasy%20and%20Disinformation&f=false
+
+https://books.google.com.tr/books?hl=tr&lr=&id=IaA8mZqhjPkC&oi=fnd&pg=PR13&dq=related:YNdJdYeCiV4J:scholar.google.com/&ots=rpDwRs7EOZ&sig=Qbvd_knIemNchpwpZu1ehdIKEM0&redir_esc=y#v=onepage&q&f=false
