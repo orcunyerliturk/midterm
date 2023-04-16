@@ -1,9 +1,16 @@
 ---
+output:
+  bookdown::pdf_document2: default
+  html_document: default
+editor_options: 
+  chunk_output_type: inline
+---
+ ---
 title: "UFO Sightings"
 author: 
-  - Yerliturk, Turker Orcun[^1]
-bibliography: ../bibliography/biblio.bib
-csl: ../csl/apa.csl
+   - Yerliturk, Turker Orcun[^1]
+ bibliography: ../bibliography/biblio.bib
+ csl :../csl/apa.csl
 header-includes:
   - \usepackage{polyglossia}
   - \setmainlanguage{english}

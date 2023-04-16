@@ -1,0 +1,185 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\begin{longtable}[]{@{}l@{}}
+\toprule()
+\endhead
+itle: ``UFO Sightings'' \\
+uthor: \\
+- Yerliturk, Turker Orcun\footnote{20080506, \href{https://github.com/orcunyerliturk/midterm}{Github Repo}} \\
+bibliography: ../bibliography/biblio.bib \\
+csl :../csl/apa.csl \\
+eader-includes: \\
+- \\
+- \\
+- \\
+- \\
+- \captionsetup[table]{skip=10pt} \\
+utput: \\
+bookdown::pdf\_document2: \\
+fig\_caption: yes \\
+fig\_height: 3 \\
+fig\_width: 4 \\
+keep\_tex: no \\
+latex\_engine: xelatex \\
+number\_sections: yes \\
+toc: no \\
+eometry: margin=1in \\
+ink-citations: yes \\
+rlcolor: blue \\
+ontsize: 12pt \\
+iblio-style: apalike \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{important-information-about-midterm}{%
+\section{Important Information About Midterm}\label{important-information-about-midterm}}
+
+\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 35 IN THIS FILE!}
+
+\textbf{Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.}
+
+\textbf{You must upload your project folder (\texttt{YourStudentID.zip} file) to \emph{ekampus.ankara.edu.tr} until 16 April 2023, 23:59.}
+
+\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+First of all, the purpose of my study is to examine the dataset related to UFO sightings. I found the necessary data for this study on the ``\url{https://github.com/rfordatascience/tidytuesday}'' website. After finding the dataset, I removed the rows containing ``NA'' values using the command ``ufo\_sightings \textless- na.omit(ufo\_sightings)''. The remaining variables are as follows: date time, city area, state, country, UFO shapes, encounter length, described encounter length, description, data documented, latitude, longitude. My dataset has a total of 66,516 entries.
+
+The question I am asking is: ``Do UFOs really exist or are they just an illusion that people see?'' This question is related to the articles and books I found, and I have created a literature review with the information from these sources.
+
+\hypertarget{literature-review}{%
+\subsection{Literature Review}\label{literature-review}}
+
+In recent years, there has been increasing interest in the subject of Unidentified Flying Objects (UFOs) and their potential existence. This interest has led to a significant amount of research and debate among scientists, researchers, and enthusiasts. In this literature review, four sources of information will be examined.
+
+``All research revolves around this question: ``Do UFOs really exist or are they just an illusion that people see?'' Many people from different parts of the world claim to have observed UFOs and demand that research be conducted on UFOs. However, as stated in the quote from @ \{Sturrock:1997 ``Physical scientists cannot get involved in the UFO problem unless there is physical evidence.'' Nevertheless, there have been individuals who presented physical evidence. As mentioned in @ \{Clarke:2009 book, most sightings can be explained, but there are still unexplained cases, which is why more needs to be learned about UFOs. According to @\{Greer:2009 book, the UFO phenomenon is a complex mixture of facts, fantasies, and misleading information, and a more nuanced approach is necessary to fully understand it. Just like people who observe UFOs, scientists investigating these phenomena cannot come to a definitive conclusion. @\{Alexander:2011 concludes that most conspiracy theories and myths about UFOs are not supported by evidence.''
+
+In conclusion, the literature on UFOs is vast and varied, with a range of opinions and theories on the subject. While some argue that there is significant evidence to support the existence of UFOs, others maintain that there is little empirical evidence to prove their existence. However, most agree that the UFO phenomenon remains a fascinating and mysterious topic that requires further research and investigation.
+
+\textbf{References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.}
+
+\textbf{\emph{You shouldn't delete the last 3 lines. Those lines are required for References section.}}
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+\url{https://citeseerx.ist.psu.edu/document?repid=rep1\&type=pdf\&doi=869a38b4b12d857ad6330f1f5f2dfd8634b69aee}
+
+\url{https://books.google.com.tr/books?id=51nCAwAAQBAJ\&printsec=frontcover\&hl=tr\&source=gbs_ge_summary_r\&cad=0\#v=onepage\&q\&f=false}
+
+\url{https://books.google.com.tr/books?hl=tr\&lr=\&id=EYU1GrJjUZMC\&oi=fnd\&pg=PR7\&dq=The+UFO+Phenomenon:+Fact,+Fantasy+and+Disinformation\&ots=Du8VevjneM\&sig=bHTd33yj-HQyq0zuP9hf0d5EMI8\&redir_esc=y\#v=onepage\&q=The\%20UFO\%20Phenomenon\%3A\%20Fact\%2C\%20Fantasy\%20and\%20Disinformation\&f=false}
+
+\url{https://books.google.com.tr/books?hl=tr\&lr=\&id=IaA8mZqhjPkC\&oi=fnd\&pg=PR13\&dq=related:YNdJdYeCiV4J:scholar.google.com/\&ots=rpDwRs7EOZ\&sig=Qbvd_knIemNchpwpZu1ehdIKEM0\&redir_esc=y\#v=onepage\&q\&f=false}
+
+\end{document}
